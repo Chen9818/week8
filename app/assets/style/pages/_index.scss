@@ -1,0 +1,14 @@
+.main{
+    padding-top: 144px;
+    &-img img{
+        height: 500px;
+    }
+    &-side{
+        width: 100px;
+        writing-mode: vertical-lr;
+    }
+    .side-img img{
+        height: 340px;
+        width: 329px;
+    }
+}
