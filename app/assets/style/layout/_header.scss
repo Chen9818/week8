@@ -1,9 +1,57 @@
 .navbar{
   height: 104px;
+  z-index: 2;
   .container{
     line-height: 103px;
   }
   &-img{
     margin-top: 17px;//logo上下置中
+  }
+}
+
+.ranking{
+  &-img{
+    width: 414px;
+    height: 374px;
+    // z-index: -1;
+    // object-fit: cover;
+    // object-position: top;
+    // position: relative;
+    // opacity: 1;
+    background-image: url("../../../assets/images/art04.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .a{
+      width: 100%;
+      height: 100%;
+      button{
+        display: none;
+      }
+    }
+    &:hover .a{
+      background: rgba(0,0,0,.5);
+      button{
+        display: block;
+      }
+    }
+  }
+  &-part{
+    position: relative;
+    // background: red;
+    &::before{
+      content: "1";
+      font-size: 32px;
+      text-align: center;
+      padding: 8px;
+      background-color: white;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      width: 64px;
+      height: 64px;
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
   }
 }

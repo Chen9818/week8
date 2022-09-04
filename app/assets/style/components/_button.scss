@@ -2,8 +2,9 @@
     position: relative;
     width: 132px;
     height: 35px;
+    line-height: 21px;
 }  
-.btn-triangle ::after {
+.btn-triangle::after{
     content:"";
     position: absolute;
     right: 0;
@@ -11,7 +12,7 @@
     border-left: 16px transparent solid;
     border-bottom: 16px #E6553B solid;
 }
-.btn-triangle :hover::after{
+.btn-triangle:hover::after{
     border-bottom: 16px black solid;
 }  
 .btn-white{
@@ -26,5 +27,8 @@
 .btn-border:hover{
     background-color: #E6553B;
     color: white;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    // border-bottom: 1px solid black;
 }
