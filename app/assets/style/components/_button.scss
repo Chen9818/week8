@@ -1,3 +1,4 @@
+//main部分的btn
 .btn-triangle  {
     position: relative;
     width: 132px;
@@ -24,11 +25,56 @@
     color: white;
 }
 
-.btn-border:hover{
+// .btn-border:hover{
+//     background-color: #E6553B;
+//     color: white;
+//     border: 1px solid black;
+// }
+
+
+//title部分的btn
+.btn-triangle-2  {
+    position: relative;
+    width: 132px;
+    height: 35px;
+    line-height: 21px;
+}  
+.btn-triangle-2::after{
+    content:"";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    border-left: 16px transparent solid;
+    border-bottom: 16px #E6553B solid;
+}
+.btn-border-bottom-none:hover{
     background-color: #E6553B;
     color: white;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
-    // border-bottom: 1px solid black;
+}
+
+//img上的btn
+.btn-triangle-3  {
+    position: relative;
+    width: 132px;
+    height: 35px;
+    background-color: white;
+    line-height: 21px;
+}  
+.btn-triangle-3::after{
+    content:"";
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    border-left: 16px transparent solid;
+    border-bottom: 16px #E6553B solid;
+}
+.btn-triangle-3:hover::after{
+    border-bottom: 16px black solid;
+}
+.btn-border-bottom-right-none:hover{
+    background-color: #E6553B;
+    color: white;
 }

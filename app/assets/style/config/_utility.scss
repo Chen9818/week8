@@ -1,0 +1,25 @@
+@mixin ranking-number ($number){
+    &::before{
+        content: $number;
+        font-size: 32px;
+        text-align: center;
+        padding: 8px;
+        background-color: white;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 64px;
+        height: 64px;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+}
+
+@mixin image ($url){
+    width: 414px;
+    height: 374px;
+    background-image: url($url);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
