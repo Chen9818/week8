@@ -22,7 +22,7 @@
 
 var swiper = new Swiper(".swiper", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 150,
   loop: true,
   centeredSlides: true,
   pagination: {
@@ -46,4 +46,13 @@ var swiper = new Swiper(".swiper", {
   //     spaceBetween: 30
   //   }
   // }
+});
+
+// init Masonry
+var $grid = $('.grid').masonry({
+  // options...
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
 });
