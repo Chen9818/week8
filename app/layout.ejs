@@ -6,41 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body>
-    <div class="navbar bg-light position-fixed w-100 p-0 border-bottom border-black border-1">
-      <div class="container d-block h-100">
-        <div class="d-flex justify-content-between h-100">
-          <div class="navbar-img">
-            <embed src="./assets/images/logo.svg" type="">
-          </div>
-          <div class="navbar-part">
-            <ul class="d-flex m-0 h-100">
-              <li class="border-start border-end border-black">
-                <form  class="px-9" action="">
-                  <input type="text" class="border-0 bg-light" placeholder="搜尋作品名稱、藝術家名稱" name="" id="">
-                  <button class="btn">
-                  <i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-              </li>
-              <li class="px-9 border-end border-black">探索</li>
-              <li class="px-9 border-end border-black">市值</li>
-              <li class="ps-9">
-                <i class="fa-solid fa-wallet"></i>
-              </li>
-            </ul>
-          </div>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-1 border-bottom border-black py-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo.svg" alt="logo" class="mt-0">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="border-start border-1 border-black">
+              <form  class="ms-9" action="">
+                <input type="text" class="border-0 bg-light" placeholder="搜尋作品名稱、藝術家名稱" name="" id="">
+                <button class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </li>
+            <li>444</li>
+            <li>44</li>
+            <li>55</li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
     <%- contents %>
 
-    <div class="footer text-center">
+    <div class="footer text-center bg-light border-top border-4 border-black pt-6">
       © ART NFT. All Rights Reserved
     </div>
 
