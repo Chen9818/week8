@@ -1,11 +1,19 @@
 .navbar{
-  // height: 104px;
+  position: relative;
+  &::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 119px;
+    right: 0;
+    background: black;
+    position: absolute;
+  }
   z-index: 2;
   .container{
     line-height: 103px;
   }
   img{
-    // line-height: 103px;
     margin-top: 27px;//logo上下置中
   }
   &-part{
@@ -13,35 +21,8 @@
   }
 }
 
-
-// <nav class="navbar navbar-expand-lg bg-light navbar-light position-fixed w-100 p-0 border-bottom border-black border-1">
-// <div class="container d-block h-100">
-//   <div class="d-flex justify-content-between h-100">
-//     <a class="navbar-brand" href="index.html">
-//       <img src="./assets/images/logo.svg" alt="logo" class="">
-//     </a>
-
-//     <button class="navbar-toggler justify-content-end d-lg-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-//       <span class="navbar-toggler-icon">22</span>
-//     </button>
-    
-//     <div class="navbar-part justify-content-end d-none d-lg-block collapse navbar-collapse" id="navbarNav">
-//       <ul class="d-flex m-0 h-100 navbar-nav">
-//         <li class="border-start border-end border-black nav-item">
-//           <form  class="px-9" action="">
-//             <input type="text" class="border-0 bg-light" placeholder="搜尋作品名稱、藝術家名稱" name="" id="">
-//             <button class="btn">
-//             <i class="fa-solid fa-magnifying-glass"></i></button>
-//           </form>
-//         </li>
-//         <li class="px-9 border-end border-black nav-item">探索</li>
-//         <li class="px-9 border-end border-black nav-item">市值</li>
-//         <li class="ps-9 nav-item">
-//           <i class="fa-solid fa-wallet"></i>
-//         </li>
-//       </ul>
-//     </div>
-    
-//   </div>
-// </div>
-// </nav>
+@include media-breakpoint-down(lg) {
+  .navbar::after{
+    top: 103px;
+  }
+}

@@ -16,26 +16,53 @@
   </head>
 
   <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-1 border-bottom border-black py-0">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light py-0">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="./assets/images/logo.svg" alt="logo" class="mt-0">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
+          <div class="d-flex d-lg-none align-items-center">
+            <a href="" class="me-6 text-decoration-none d-block">
+              <i class="fs-4 fa-solid fa-magnifying-glass text-black"></i>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
-            <li class="border-start border-1 border-black">
-              <form  class="ms-9" action="">
-                <input type="text" class="border-0 bg-light" placeholder="搜尋作品名稱、藝術家名稱" name="" id="">
+            <li class="nav-item d-lg-block d-none border-start border-1 border-black px-9">
+              <form  class="h-100" action="">
+                <input type="text" class="border-0 bg-light h-100" placeholder="搜尋作品名稱、藝術家名稱" name="" id="">
                 <button class="btn">
                 <i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </li>
-            <li>444</li>
-            <li>44</li>
-            <li>55</li>
+            <li class="nav-item d-lg-block d-none border-1 border-start border-black px-9 text-center">
+              <a class="nav-link fw-bold"
+                href="search.html">探索</a>
+            </li>
+            <li class="nav-item d-block d-lg-none border-1 border-bottom border-black px-9 text-center">
+              <a class="nav-link fw-bold"
+                href="search.html">探索</a>
+            </li>
+            <li class="nav-item d-lg-block d-none border-1 border-start border-black px-9 text-center">
+              <a class="nav-link fw-bold"
+                href="price.html">市值</a>
+            </li>
+            <li class="nav-item d-block d-lg-none px-9 text-center">
+              <a class="nav-link fw-bold"
+                href="price.html">市值</a>
+            </li>
+            <li class="nav-item border-start border-1 border-black ps-9 d-none d-lg-block justify-content-center" style="line-height:119px;">
+              <i class="fa-solid fa-wallet"></i>
+            </li>
+            <li class="nav-item text-center mb-6 border border-black border-1 d-block d-lg-none text-center bg-primary text-white">
+            連結錢包</li>
           </ul>
         </div>
       </div>

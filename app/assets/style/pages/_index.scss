@@ -11,9 +11,7 @@
         writing-mode: vertical-lr;
     }
     .side-img img{
-        // height: 340px;
         height: 500px;
-        // width: 329px;
         width: 100%;
         object-fit: cover;
     }
@@ -28,14 +26,11 @@
 @include media-breakpoint-up(xl){
   .main .side-img img{
     height: 340px;
-    // height: 500px;
     width: 329px;
-    // width: 100%;
-    // object-fit: cover;
-}
+  }
 }
 
-
+// 市價排行榜
 .ranking{
     //rank1、2、3圖片
   &-img{
@@ -98,12 +93,19 @@
   }
 }
 
-
+// 熱門藝術家
 .swiper {
   height: 100%;
   padding-top: 140px;
   height: 600px;
   overflow-y: visible;
+}
+
+@include media-breakpoint-down(xl){
+  .swiper{
+    padding-top: 0;
+    height: 400px;
+  }
 }
   
 .swiper-slide {
@@ -118,7 +120,6 @@
   }
   .swiper-title{
     display: none;
-    // font-size: 48px;
   }
   .swiper-text{
     display: none;
@@ -126,14 +127,9 @@
   }
   &-active{
     transform:scale(1.8);
-    // width: 636px;
-    // height: 439px;
-    // transform:scaleY(2);
     z-index:2;
     img{
       filter:none;
-      // position: relative;
-      
     }
 
     .swiper-img{
@@ -148,7 +144,6 @@
     }
     .swiper-text{
       content: "";
-      // opacity: 0.85;
       bottom: 24px;
       left: 24px;
       right: 24px;
@@ -156,13 +151,13 @@
       display: block;
       p{
         opacity: 0.85;
-        // padding: 24px;
       }
     }
   }
 }
 
-.swiper-pagination-bullet{ //客製化pagination
+//客製化pagination
+.swiper-pagination-bullet{ 
   border-radius: 0;
   width: 8px;
   height: 8px;
@@ -174,7 +169,7 @@
 }
 
 
-
+// 瀑布
 .grid {
   margin-left: -12px;
   margin-right: -12px;
@@ -188,8 +183,6 @@
 }
 
 .grid-item{
-  // background: white;
-  // width: 25%;
   .item{
     position: relative;
     .item-text{
@@ -220,8 +213,6 @@
   .grid-sizer,
   .grid-item {
     width: 33.33%;
-
-
   }
 }
 
@@ -249,7 +240,6 @@
       
       &:hover button{
         display: block;
-        // margin-bottom: 16px;
       }
       &:hover .item-img::after{
         content: "";
@@ -265,7 +255,6 @@
     
       &:hover .item-img::before{
         content: "";
-        // width: 87%;
         top: 16px;
         right: 16px;
         bottom: 16px;
