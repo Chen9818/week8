@@ -34,13 +34,13 @@
 .ranking{
     //rank1、2、3圖片
   &-img{
-    @include image("../../../assets/images/art04.jpg");
+    @include image("../../assets/images/art04.jpg");
   }
   &-img-2{
-    @include image("../../../assets/images/art05.jpg");
+    @include image("../../assets/images/art05.jpg");
   }
   &-img-3{
-    @include image("../../../assets/images/art06.jpg");
+    @include image("../../assets/images/art06.jpg");
   }
 
   //rank1、2、3編號
