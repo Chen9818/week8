@@ -13345,7 +13345,7 @@ img {
 .ranking-img {
   width: 100%;
   height: 374px;
-  background-image: url("../../assets/images/art04.jpg");
+  background-image: url("../../images/art04.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13371,7 +13371,7 @@ img {
 .ranking-img-2 {
   width: 100%;
   height: 374px;
-  background-image: url("../../../assets/images/art05.jpg");
+  background-image: url("../../images/art05.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13397,7 +13397,7 @@ img {
 .ranking-img-3 {
   width: 100%;
   height: 374px;
-  background-image: url("../../../assets/images/art06.jpg");
+  background-image: url("../../images/art06.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
